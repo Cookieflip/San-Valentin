@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Te amo 😍❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<audio id="musica" src="musica/Veo en ti la luz.mp3" loop></audio>
+<body>
+    <div id="pantalla-inicial" class="pantalla-inicial">
+        <div class="mensaje-inicial">
+            <h1>Para Ti ❤️</h1>
+            <p>✨ Haz click para entrar a nuestro mundo ✨</p>
+        </div>
+    </div>
+
+
+    <div class="portada">
+        <h1>❤️Feliz San Valentin mi Amor❤️</h1>
+        <p>Eres muy especial para mi, por eso quise hacer esto para ti, con todo el amor que siento por ti 💕</p>
+    </div>
+
+    <!-- Álbum -->
+    <section class="album">
+        <h2>📸 Nuestros Recuerdos 📸</h2>
+        <div class="galeria">
+            <img src="img/Foto1.jpeg" data-descripcion="💕 2021-
+            Nuestro primer año juntos, mi amor.
+            Qué chiquitos estábamos… y sin saberlo, la vida nos volvió a juntar. Sin duda, uno de los mejores años de mi vida. Después de tanto caos, verte y lograr que fueras parte de mi vida fue lo mejor que me pudo haber pasado.
+            Todavía me acuerdo de lo nervioso que estaba cuando te pedí que fueras mi chica. El corazón me latía mil por hora, sudaba muchísimo, pero las ganas de estar contigo, lo mucho que me gustas y hasta mis chocolates hicieron su parte. Me dijiste que sí… y desde ese momento hasta hoy, he sido muy feliz." onclick="abrirModal(0)">
+            <img src="img/Foto2.jpeg" data-descripcion="💕 2022-
+            Ya teníamos un año juntosss.
+            En ese momento me di cuenta de que teníamos algo muy serio. Mi primer cumpleaños contigo a mi lado… me devolviste ese sentimiento de compañía y amor que no sentía desde hacía años. Recuerdo que me la pasé muy bonito.
+            Creo que este año no lo pasamos a la distancia, y sentí muy bonito estar contigo, tener a alguien con quien platicar tantas cosas, con quien compartir, con quien sentir." onclick="abrirModal(1)">
+            <img src="img/Foto3.jpeg" data-descripcion="💕 2023-
+            Ya cumplíamos dos años juntos, mi amoooor.
+            Y la llegada de Cane a nuestras vidas… nuestra criaturita naranja y peluda. Un regalo que no pudo ser mejor. Me diste al gordito hermoso, y cada vez que lo veo me acuerdo de ti. El amor y las ganas con las que me diste a Cane jamás se me van a olvidar. Nuestro nene hermoso." onclick="abrirModal(2)">
+            <img src="img/Foto4.jpeg" data-descripcion="💕 2024-
+            El año en que tu familia empezó a adoptarme y quererme mucho.
+            Nos fuimos a Juquilita juntos, nuestro primer viajeeee. Me encantó salir de viaje contigo; afortunadamente no nos vomitamos jajaja.
+            Me sentí mucho más unido a ti. Ya no solo era tu novio, sino tu real, tu hombre. Ya todos preguntaban por mí, jiji. Gracias por ese viajecito tan bonito." onclick="abrirModal(3)">
+            <img src="img/Foto5.jpeg" data-descripcion="💕 2025-
+            El año en que aprendí, crecí y maduré más junto a ti.
+            Hice mal muchas cosas y me arrepiento profundamente de casi haber terminado nuestra relación. Fue el año en el que más te hice daño, y eso siempre me va a pesar.
+            Claro que no todo fue malo. También fui contigo a Juquilita por segunda vez y me la pasé muy, muy bonito. Otro viaje más, y qué mejor que contigo, con tus cuidados y el cariño que siempre me das.
+            Pero será un año que me marcará para siempre. No tienes idea de lo mucho que me pesa haberte hecho daño. Quiero demostrarte siempre —y que jamás dudes— todo el amor que te tengo, lo mucho que quiero cuidarte y tener una vida contigo: crecer, casarnos y tener hijos. Quiero una vida contigo, para toda la vida. Y siempre te pediré perdón por el dolor que te causé." onclick="abrirModal(4)">
+            <img src="img/Foto6.jpeg" data-descripcion="💕 2026-
+            Estamos en el ahoraaaa.
+            Hoy más que nunca me siento feliz de tenerte a mi lado, de que seas y siempre serás mi compañera de vida.
+            Este año quiero que, además de todo el amor que nos tenemos, empecemos a construir un futuro sólido. Estamos por terminar nuestras carreras y entraremos en una etapa más adulta. Ya sabes todo lo que quiero: trabajar, independizarme y “robarte” para que por fin podamos vivir juntos.
+            Acompañarnos todos los días. Tenernos para toda la vida. Ya no mandarnos mensajes de buenas noches, sino darnos un beso, decirnos “hasta mañana” y dormir abrazaditos. Lo quiero todo contigo." onclick="abrirModal(5)">
+        </div>
+    </section>
+
+    <!-- MODAL INSTAGRAM STYLE -->
+    <div id="modal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">✖</span>
+
+        <div class="modal-contenido">
+
+            <div class="modal-descripcion">
+                <p id="modal-desc"></p>
+            </div>
+
+            <div class="modal-imagen">
+                <button class="nav prev" onclick="cambiarFoto(-1)">❮</button>
+                <img id="modal-img">
+                <button class="nav next" onclick="cambiarFoto(1)">❯</button>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <!-- Botón para abrir carta -->
+    <section class="carta-seccion">
+        <button onclick="abrirCarta()">💌</button>
+
+        <div id="carta" class="carta">
+            <h2>Para Mame Bapa ❤️</h2>
+            <p>Mi amor, si pudiera abrir mi pecho y dejarte ver todo lo que hay dentro, verías que mi corazón tiene tu nombre escrito en cada rincón. Lo que siento por ti no es pequeño, no es pasajero, no es algo que se pueda explicar fácilmente… es un amor que me llena, que me desborda, que a veces siento que no me cabe en el cuerpo. </p>
+            <p>Te amo con una intensidad que me deja sin palabras. Te amo con cada latido, con cada pensamiento, con cada suspiro. Te amo tanto que a veces siento que me falta corazón de tanto amor que te tengo. </p>
+            <p>Contigo siento todo lo bonito que existe en este mundo. Siento paz cuando me abrazas, siento alegría cuando sonríes, siento fuerza cuando me miras, siento hogar cuando estás conmigo. Eres mi lugar seguro, mi calma en medio del caos, mi felicidad más grande. </p>
+            <p>Hoy es San Valentín, pero lo que siento por ti no vive en un solo día. No es una fecha lo que me mueve a escribirte esto ni a darte detalles. Tú mereces flores todos los días. Mereces cartas todos los días. Mereces que te amen, te cuiden y te recuerden lo valiosa que eres cada mañana al despertar. Porque tú no eres un regalo de temporada… tú eres el regalo de mi vida. </p>
+            <p>Le agradezco a Dios por ti más de lo que imaginas. Gracias por cruzar nuestros caminos. Gracias por permitir que nuestras historias se entrelazaran. Gracias por regalarme tu amor. Tenerte a mi lado es una bendición que no doy por sentada ni un solo segundo. </p>
+            <p>Siempre y para siempre quiero estar contigo. Te quiero en mi presente y en cada uno de mis futuros. Quiero crecer contigo, aprender contigo, equivocarme y mejorar contigo. Quiero una vida entera a tu lado. </p>
+            <p>Te necesito. Necesito tu voz cuando el día pesa, tus abrazos cuando todo se vuelve difícil, tu risa que ilumina cualquier sombra. Necesito tu existencia en la mía porque desde que llegaste, mi vida tiene un sentido más profundo. </p>
+            <p>Eres el amor de mi vida. No tengo dudas. No tengo miedo al decirlo. Lo siento en el alma. </p>
+            <p>Y aunque la Kitty que te di y las flores puedan parecer pequeñas, llevan dentro todo lo que soy. Tal vez no sean muchas, pero están llenas de intención, de gratitud y de un amor que no sabe medirse. </p>
+            <p>Gracias por hacerme tan feliz. </p>
+            <p>Gracias por elegirme. </p>
+            <p>Gracias por existir. </p>
+            <p>Te amo más de lo que mis palabras alcanzan, más de lo que mi voz puede pronunciar, más de lo que mi corazón puede contener. </p>
+            <p>Y si volviera a vivir mil veces… en cada una de ellas te elegiría a ti. 💕 </p>
+
+            <!-- Tu dibujo -->
+             <div class="contenedor-dibujo">
+                <img id="dibujoCarta" src="img/MameYOchis.png" class="dibujo" alt="Dibujo de Mame y Ochis" crossorigin="anonymous">
+             </div>
+        </div>
+        
+        <div>
+            <button id="btnDescargar" onclick="descargarCarta()">Descargar Carta 💌</button>
+        </div>
+         
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+
+    <div class="efectos"></div>
+</body>
+</html>
